@@ -8,6 +8,7 @@ module.exports = {
 	publicPath: '',
 	productionSourceMap: false,
 	lintOnSave: false,
+	outputDir: 'yuansheng_web_dist', // 输出文件目录
 	devServer: {
 		// proxy: process.env.VUE_APP_DEV_REQUEST_DOMAIN_PREFIX,
 		port: 8975,
@@ -28,20 +29,20 @@ module.exports = {
 
 	chainWebpack: config => {
 		config.module
-		  .rule('svg')
-		  .exclude.add(resolveRealPath('src/icons'))
-		  .end()
+			.rule('svg')
+			.exclude.add(resolveRealPath('src/icons'))
+			.end()
 		config.module
-		  .rule('icons')
-		  .test(/\.svg$/)
-		  .include.add(resolveRealPath('src/icons'))
-		  .end()
-		  .use('svg-sprite-loader')
-		  .loader('svg-sprite-loader')
-		  .options({
-		    symbolId: 'icon-[name]'
-		  })
-		  .end()
+			.rule('icons')
+			.test(/\.svg$/)
+			.include.add(resolveRealPath('src/icons'))
+			.end()
+			.use('svg-sprite-loader')
+			.loader('svg-sprite-loader')
+			.options({
+				symbolId: 'icon-[name]'
+			})
+			.end()
 		// config.resolve.alias
 		// .set('vue$', 'vue/dist/vue.esm.js')
 		// .set('@', resolveRealPath('src'))
