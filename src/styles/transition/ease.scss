@@ -1,0 +1,8 @@
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.ease-enter-active ,.ease-leave-active{
+  transition: all .3s ease;
+}
+.ease-enter, .ease-leave-to {
+  opacity: 0;
+}

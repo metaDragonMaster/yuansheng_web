@@ -1,0 +1,15 @@
+  |  模块   | 文件夹 |
+  |  ----  | ----  |
+  | 防伪溯源 | antiCounterfeitingTraceability |
+  | 认证 | authentication |
+  | 客服中心 | customerService |
+  | 数字农业大屏展示 | dataCenter |
+  | 错误页面 | error |
+  | 特色服务 | especiallyService |
+  | 首页 | homepage |
+  | 原生资讯 | information |
+  | 入驻 | settled |
+  | 购物车 | shopCart |
+  | 供应链金融 | supplyChainFinance |
+  | 用户中心 | userCentered |
+  | 用户注册登录 | userSign |

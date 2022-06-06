@@ -1,0 +1,27 @@
+// $--color-primary: #00BF30;
+// $--color-primary: red;
+.el-form-item__label::after{
+	content: ":";
+	margin-left: 0.25rem;
+}
+// .el-table__row .el-link:not(:last-child) {
+// 	margin-right: 1rem;
+// }
+.handle .el-table__row td:last-child .cell > *:not(:last-child) {
+	margin-right: 1rem;
+}
+.mini-form-item {
+	width: 300px;
+	display: inline-flex;
+	::v-deep.el-form-item__content {
+		display: flex;
+		width: 180px;
+	}
+	& .el-input {
+		max-width: 120px;
+		margin-right: 1rem;
+	}
+}
+.el-form-item:not(:last-child) {
+	margin-bottom: 22px !important;
+}

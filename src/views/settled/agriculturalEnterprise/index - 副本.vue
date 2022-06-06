@@ -1,0 +1,210 @@
+<template>
+	<div id="agricultural-enterprise">
+		<div class="limit-max-width no-1 ">
+			<h1>农资企业入驻</h1>
+			<h3>直面消费者</h3>
+			<button class="consulting-button" @click="$routerUtil.toPath('/authentication',{ type : 3 })">
+				立即入驻
+			</button>
+		</div>
+		<div class="page-model limit-max-width no-2 ">
+			<div class="no-model-title-center">
+				<p>关于农资集采</p>
+				<span>
+					ABOUT THE SOURCE OF THE PRODUCT
+				</span>
+			</div>
+			<ol class="model-content">
+				<li>
+					<p>
+						<span>
+							产品需求
+						</span>
+					</p>
+					<span>原生联已经整合了常德地区各大农业合伙企业，拥有耕地超150万亩，农资产品需求巨大。我们将对产品提供方进行严格的审查、评级，优中选优，力争把最好的产品提供给各大合伙企业</span>
+				</li>
+				<li>
+					<p>
+						<span>合作地区</span>
+					</p>
+					<span>以常德为中心，辐射周边，与湖南、湖北、四川等多地合伙企业达成合作意向，与全国超20个超大型农资企业达成长期合作</span>
+				</li>
+			</ol>
+		</div>
+		<div class="page-model limit-max-width no-3">
+			<div class="no-model-title-center">
+				
+				<p>采购数字化全链路 打造高效供应链协同管理</p>
+				<span>
+					ABOUT THE SOURCE OF THE PRODUCT
+				</span>
+			</div>
+			<div class="context">
+				<img src="@/assets/images/settled/agriculturalSuperEnterprise/no-3-image.png" alt="">
+			</div>
+		</div>
+		<div class="page-model limit-max-width no-4 flex-center-js-sard">
+			<div class="model-text">
+				<h1>寻源采购</h1>
+				<p>多重寻源场景</p>
+				<p>满足不同采购需求的流合规性</p>
+				<ol>
+					<li><span>询价采购：来源丰富、充分比价</span></li>
+					<li><span>招标采购：在线合规、多方协同</span></li>
+					<li><span>竞价采购：透明博弈、快速降本</span></li>
+					<li><span>供应商招募：半径扩大、高效触达</span></li>
+				</ol>
+			</div>
+			<div class="image-box">
+				<img src="@/assets/images/settled/agriculturalSuperEnterprise/no-4-image.png" alt="">
+			</div>
+		</div>
+		<div class="page-model limit-max-width no-5">
+			<div class="no-model-title-center">
+				<p>入驻流程</p>
+				<span>
+					ABOUT THE SOURCE OF THE PRODUCT
+				</span>
+			</div>
+			<div class="image-box">
+				<img src="@/assets/images/settled/agriculturalSuperEnterprise/no-5-image.png" >
+			</div>
+			<button class="consulting-button" @click="$routerUtil.toPath('/authentication',{ type : 3 })">
+				立即入驻
+			</button>
+		</div>
+	</div>
+</template>
+<script>
+import IntroduceCard from '@/components/SomeWhere/IntroduceCard.vue';
+export default {
+	data(){return{
+		
+	}},
+	components: {
+		IntroduceCard
+	},
+	computed: {
+		
+	},
+	mounted() {
+		
+	},
+	methods:{
+		
+	}
+}
+</script>
+<style  lang="scss" scoped="scoped">
+#agricultural-enterprise {
+	.page-model {
+		padding-top: 3.375rem;
+		padding-bottom: 3.375rem;
+		&:nth-child(odd) {
+			background-color: #F9FCFB;
+		}
+	}
+	.consulting-button {
+		color: #FFFFFF;
+		background-color: #F22D24;
+		padding: 1rem 2.25rem;
+		font-size: 1.25rem;
+		border-radius: 0.25rem;
+		font-weight: bold;
+		letter-spacing: 0.125rem;
+		text-indent: 0.125rem;
+		display: block;
+	}
+	.no-1 {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../../../assets/images/settled/agriculturalEnterprise/banner-bg.png);
+		height: 31.25rem;
+		color: #047934;
+		h1 {
+			font-size: 6.25rem;
+			padding-top: 5.625rem;
+		}
+		h3 {
+			font-size: 3.125rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+	
+	.no-2 {
+		.model-content {
+			li {
+				display: grid;
+				grid-template-columns: 15rem auto;
+				// margin: 0 0;
+				padding: 0 4rem 0 5rem;
+				& > span {
+					padding-top: 3rem;
+					padding-bottom: 3rem;
+				}
+			}
+			li:not(:last-child) > span {
+				border-bottom: 0.0625rem solid #f2f2f2;
+			}
+			p {
+				display: flex;
+				align-items: center;
+				span {
+					font-size: 1.375rem;
+					border-left: 0.25rem solid #FF8000;
+					padding-left: 1rem;
+				}
+			}
+		}
+	}
+
+	.no-3{
+		.context {
+			max-width: 68rem;
+			margin: 4rem auto;
+		}
+	}
+	.no-4{
+		.model-text {
+			h1 {
+				margin-bottom: 1rem;
+			}
+			p {
+				color: #999999;
+				font-size: 0.75rem;
+				&:not(:last-child) {
+					margin-bottom: .5rem;
+				}
+			}
+			ol {
+				margin-top: 1rem;
+			}
+			li {
+				list-style: disc;
+				list-style-position: inside;
+				color: #0DA056;
+				span {
+					color: #333333;
+				}
+				&:not(:last-child) {
+					margin-bottom: .5rem;
+				}
+			}
+		}
+		.image-box {
+			max-width: 32.5rem;
+		}
+	}
+	.no-5{
+		.image-box {
+			max-width: 68rem;
+			margin: 4rem auto;
+		}
+		.consulting-button {
+			margin: 0 auto;
+			background-color: #047934;
+		}
+	}
+}
+</style>
