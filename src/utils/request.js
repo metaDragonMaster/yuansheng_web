@@ -6,13 +6,13 @@ import {
 } from '@/utils/auth';
 
 const service = axios.create({
-	// baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
-	// baseURL: 'https://code.yuanshengl.com/',  
-	// baseURL: 'http://192.168.1.249:8301/', 
-	baseURL: 'http://18.138.34.209:8301/', 
+	baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
+	// baseURL: 'https://code.yuanshengl.com/',
+	// baseURL: 'http://192.168.1.249:8301/',
+	// baseURL: 'http://18.138.34.209:8301/',
 
-	// baseURL: 'http://192.168.1.73:8301/', 
-	// baseURL: 'http://192.168.1.21:8301/', 
+	// baseURL: 'http://192.168.1.73:8301/',
+	// baseURL: 'http://192.168.1.21:8301/',
 	timeout: 5000, // request timeout
 	headers:{
 		"Content-Type":"application/json"
